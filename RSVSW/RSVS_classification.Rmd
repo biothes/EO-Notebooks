@@ -162,7 +162,7 @@ par(col="red", cex=3)
 ct = raster::click(s2_rl, id=T, xy=T, cell=T, type="p", pch=16, col="magenta", col.lab="red")
 ```
 
-Once you have clicked your five points, press the `ESC` key to save your clicked points and close the function before moving on to the next step. If you make a mistake in the step, run the `chunck` again to start over.
+Once you have clicked your five points, click on the `stop` key in the upper left corner to save your clicked points and close the function before moving on to the next step. If you make a mistake in the step, run the `chunck` again to start over.
 
 Here we see the output of our clicking:
 
@@ -319,7 +319,7 @@ dt <- s2_rl %>%
 
 # Add a new column to the 'dt' data table called 'class', which is based on the 'id_cls' attribute of the original spatial points data frame.
 # The 'make.names()' function is used to ensure that the factor levels are valid column names.
-dt[, class := make.names(factor(points@data$id_cls))]
+dt[, class := factor(make.names(points@data$id_cls))]
 
 # Print the first few rows of the 'dt' data table to the console using the 'head()' function.
 head(dt)
