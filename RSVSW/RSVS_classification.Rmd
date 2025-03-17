@@ -677,7 +677,7 @@ The "mesma" algorithm is based on the assumption that the spectral response of a
 
 The "mesma" algorithm uses a constrained least squares approach to estimate the fractional abundances of the endmembers in each pixel.
 
-Therefore, we first have to first estimate the endmember spectra by selecting a subset of the pixels in the image that have pure spectra (i.e., spectra that are representative of a single endmember). In this example, we are going to do that by selecting 4 pure pixels in the image by using the earlier explained click function.
+Therefore, we first have to first estimate the endmember spectra by selecting a subset of the pixels in the image that have pure spectra (i.e., spectra that are representative of a single endmember). In this example, we are going to do that by selecting 3 pure pixels in the image by using the earlier explained click function.
 
 ```{r}
 # Plot the data
